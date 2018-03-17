@@ -198,11 +198,12 @@ nav h1 a {
 }
 #restaurants-list li a {
   background-color: orange;
-  border-bottom: 3px solid #eee;
+  border: 2px solid orange;
   color: #2B2A35;
   display: inline-block;
   font-size: .9rem;
   font-weight: bold;
+  margin-top: 10px;
   margin-bottom: 20px;
   padding: 12px 30px;
   text-align: center;
@@ -211,8 +212,9 @@ nav h1 a {
   transition: border .4s linear;
 }
 
-#restaurants-list li a:hover {
-  border-bottom: 3px solid #2B2A35;
+#restaurants-list li a:hover,
+#restaurants-list li a:focus {
+  border: 2px solid #2B2A35;
 }
 
 #restaurants-list li h1,
