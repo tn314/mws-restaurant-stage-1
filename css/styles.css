@@ -70,6 +70,13 @@ nav h1 a {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
+
+nav[aria-label="breadcrumb"] {
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 #breadcrumb {
   padding: 10px 40px 16px;
   list-style: none;
@@ -167,7 +174,7 @@ nav h1 a {
   padding: 30px 15px 60px;
   text-align: center;
 }
-#restaurants-list li {
+#restaurants-list article {
   background-color: #fff;
   box-sizing: border-box;
   font-family: Arial,sans-serif;
@@ -183,7 +190,7 @@ nav h1 a {
   max-width: 100%;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list article h1 {
   color: #2B2A35;
   font-family: Arial,sans-serif;
   font-size: 1.2rem;
@@ -196,7 +203,7 @@ nav h1 a {
 #restaurants-list p {
   font-size: .9rem;
 }
-#restaurants-list li a {
+#restaurants-list article a {
   background-color: orange;
   border: 2px solid orange;
   color: #2B2A35;
@@ -212,14 +219,14 @@ nav h1 a {
   transition: border .4s linear;
 }
 
-#restaurants-list li a:hover,
-#restaurants-list li a:focus {
+#restaurants-list article a:hover,
+#restaurants-list article a:focus {
   border: 2px solid #2B2A35;
 }
 
-#restaurants-list li h1,
-#restaurants-list li p,
-#restaurants-list li a {
+#restaurants-list article h1,
+#restaurants-list article p,
+#restaurants-list article a {
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -351,7 +358,7 @@ nav h1 a {
 }
 
 @media screen and (min-width: 530px) {
-  #restaurants-list li {
+  #restaurants-list article {
     width: 47%;
   }  
 }
@@ -405,7 +412,7 @@ nav h1 a {
 }
 
 @media screen and (min-width: 900px) {
-  #restaurants-list li {
+  #restaurants-list article {
     width: 30.3333%;
   }  
 }
